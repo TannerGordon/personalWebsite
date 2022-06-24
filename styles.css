@@ -1,8 +1,17 @@
 body {
     background-color: lightblue;
-    font-family: sans-serif;
+    font-family: Georgia;
 }
 
 p {
     color: white;
+}
+
+header {
+    background-color: #604fc0;
+    margin-bottom: 60px;
+}
+
+.headerLinks {
+    margin-left: 50px;
 }
