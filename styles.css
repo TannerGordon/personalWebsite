@@ -1,5 +1,15 @@
-body {
-    background-color: lightblue;
+.newBody {
+    background-image: radial-gradient(#d9eef2, #c6e6ec, #abdbe3, #8ccdd9);
+    font-family: Georgia;
+    margin: 0;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oldBody {
+    background-image: radial-gradient(#d9eef2, #c6e6ec, #abdbe3, #8ccdd9);
     font-family: Georgia;
     margin: 0;
 }
@@ -12,6 +22,7 @@ p {
 a:link, a:visited {
     color: black;
     text-decoration: none;
+    transition: 0.5s;
   }
   
   /* mouse over link / selected link */
@@ -32,6 +43,22 @@ header {
     /* top: 0; */
     /* margin: 0; */
 }
+
+.mobileHeader {
+    display: none;
+  }
+  
+  
+  /* Small devices (tablets, 768px and up) */
+  
+  @media (max-width: 768px) {
+    .desktopHeader {
+      display: none;
+    }
+    .mobileHeader {
+      display: initial;
+    }
+  }
 
 .headerLinksContainer {
     background-image: linear-gradient(90deg, black, lightblue);
@@ -58,3 +85,27 @@ header {
     color: white;
     /* background-color: orange; */
 }
+
+/* new stuff */
+
+.centerTitleContainer {
+    display: flex;
+    align-items: center;
+}
+
+.centerTitle {
+    align-self: center;
+    font-size: 80px;
+    font-weight:bold;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes example {
+    0%   {top:0px;}
+    50%  {top:10px;}
+    100% {top:0px;}
+  }
