@@ -152,28 +152,49 @@ header {
     /* animation-name: circles;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    transition: 4s ease-in-out; */
+    animation-timing-function: ease-in-out; */
+    transition: 3s;
   }
 
+  
   .c1 {
-    transform: rotate(26deg) translate(300px) rotate(-26deg);
-  }
+      transform: rotate(26deg) translate(300px) rotate(-26deg);
+    }
 
+  .c1:hover {
+      transform: rotate(26deg) translate(300px) rotate(-26deg) scale(1.1);
+    }
+    
   .c2 {
     transform: rotate(109deg) translate(240px) rotate(-109deg);
+  }
+
+  .c2:hover {
+    transform: rotate(109deg) translate(240px) rotate(-109deg) scale(1.3);
   }
 
   .c3 {
     transform: rotate(176deg) translate(360px) rotate(-176deg);
   }
 
+  .c3:hover {
+    transform: rotate(176deg) translate(360px) rotate(-176deg) scale(1.3);
+  }
+
   .c4 {
     transform: rotate(243deg) translate(300px) rotate(-243deg);
   }
 
+  .c4:hover {
+    transform: rotate(243deg) translate(300px) rotate(-243deg) scale(1.3);
+  }
+
   .c5 {
     transform: rotate(320deg) translate(300px) rotate(-320deg);
+  }
+
+  .c5:hover {
+    transform: rotate(320deg) translate(300px) rotate(-320deg) scale(1.3);
   }
 
   @keyframes circles {
@@ -196,4 +217,179 @@ header {
     height: 100%;
     width: 100%;
     z-index: -5;
+  }
+
+
+  /* Portfolio */
+
+  .newHeader {
+    position: absolute;
+    justify-content: center;
+    top: 0px;
+    margin-top: 50px;
+    /* display: flex;
+    flex-direction: row; */
+  }
+
+  .newHeaderText {
+    display: flex;
+  }
+
+  .newHeaderText:hover {
+    color: white;
+  }
+
+  .centerTitle2 {
+    font-size: 80px;
+    font-weight:bold;
+    position: relative;
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transition: 5s ease-in-out;
+}
+
+@keyframes example2 {
+    /* 0%   {top:0px;}
+    50%  {top:5px;}
+    100% {top:0px;} */
+    0%   {transform: translate(0px, 0px);}
+    50%  {transform: translate(0px, 1.5px);}
+    100% {transform: translate(0px, 0px);}
+  }
+
+  /* .newHeaderText:link, .newHeaderText:visited {
+    font-size: 40px;
+    transform: scale(1);
+  }
+
+  .newHeaderText:hover, .newHeaderText:active {
+    transform: scale(2);
+    color: black;
+  } */
+
+  .portChar-b {
+    font-size: 40px;
+    /* animation-duration: 5s; */
+    animation-delay: -2s;
+  }
+
+  .portChar-a {
+    font-size: 40px;
+    /* animation-duration: 6s; */
+    animation-delay: -3s;
+  }
+
+  .portChar-c {
+    font-size: 40px;
+    /* animation-duration: 4s; */
+    animation-delay: -1s;
+  }
+
+  .portChar-k {
+    font-size: 40px;
+    /* animation-duration: 6s; */
+    animation-delay: 1s;
+  }
+
+  .portfolioBody {
+    background-image: radial-gradient(#d9eef2, #c6e6ec, #abdbe3, #8ccdd9);
+    font-family: Georgia;
+    margin: 0;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+  .portfolioContainer {
+    display: flex;
+    justify-content: space-evenly;
+    height: 35%;
+    width: 80%;
+    /* background-color: green; */
+  }
+
+  .portfolioElementContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+}
+
+  .portfolioElement {
+    height: 170px;
+    width: 170px;
+    border-radius: 100%;
+    background-color: black;
+  }
+
+  .portfolioElementImg {
+    /* position: relative; */
+    height: 170px;
+    width: 170px;
+    border-radius: 100%;
+    /* z-index: -1; */
+  }
+
+  .portfolioText {
+    margin-top: 20px;
+  }
+
+  .ledsContainer {
+    position: absolute;
+    /* background-color: white; */
+    height: 90%;
+    width: 95%;
+    margin: 100px;
+    left: 0px;
+  }
+
+  .ledsLine {
+    position: absolute;
+    /* bottom: 0; */
+    width: 100%;
+    height: 5px;
+    background-color: black;
+  }
+
+  .ledsLineVert1 {
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 23%;
+    background-color: black;
+  }
+
+  .ledsLineVert2 {
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    bottom: 0;
+    width: 5px;
+    height: 73%;
+    background-color: black;
+  }
+
+  .ledsMid {
+    position: absolute;
+    bottom: 73%;
+    left: 0;
+    height: 5px;
+    width: 20%;
+    background-color: orange;
+  }
+
+  .ledsMid {
+    position: absolute;
+    top: 23%;
+    left: 0;
+    height: 5px;
+    width: 20%;
+    background-color: orange;
   }
